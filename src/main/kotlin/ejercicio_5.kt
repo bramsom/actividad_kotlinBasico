@@ -1,17 +1,17 @@
 package org.example
 
-/*class Phone(var isScreenLightOn: Boolean = false) {
-    open  fun switchOn() {
+open class Phone(var isScreenLightOn: Boolean = false) {
+    open fun switchOn() {
         isScreenLightOn = true
     }
 
-    open fun switchOff() {
+     fun switchOff() {
         isScreenLightOn = false
     }
 
-    open fun checkPhoneScreenLight() {
-        val phoneScreenLight = if (isScreenLightOn) "on" else "off"
-        println("The phone screen's light is $phoneScreenLight.")
+     fun checkPhoneScreenLight() {
+        val phoneScreenLight = if (isScreenLightOn) "encendida" else "apagada"
+        println("La luz de la pantalla del teléfono esta $phoneScreenLight.")
     }
 }
 
@@ -21,18 +21,18 @@ class FoldablePhone(isScreenLightOn: Boolean = false, var isFolded: Boolean = fa
         if (!isFolded) {
             isScreenLightOn = true
         } else {
-            println("Cannot switch on. The phone is folded.")
+            println("No se puede encender. el telefono esta doblado.")
         }
     }
 
     fun fold() {
         isFolded = true
-        println("The phone is now folded.")
+        println("El teléfono ahora está doblado..")
     }
 
     fun unfold() {
         isFolded = false
-        println("The phone is now unfolded.")
+        println("El teléfono ahora está desplegado.")
     }
 }
 
@@ -52,4 +52,4 @@ fun main() {
     // Apagar el teléfono
     foldablePhone.switchOff()
     foldablePhone.checkPhoneScreenLight()
-}*/
+}
